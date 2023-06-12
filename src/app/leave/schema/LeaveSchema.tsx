@@ -19,7 +19,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -36,7 +36,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'REPLACED_BY',
+                        lookup: 'REPLACED_BY',
                     },
                 },
                 {
@@ -53,7 +53,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -74,7 +74,7 @@ export const dynamicFormSchema={
                         sizeMatch:'2MB',
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
             ],
@@ -98,7 +98,7 @@ export const dynamicFormSchema={
                       regex: null,
                     },
                     action: {
-                      pre: undefined,
+                      lookup: undefined,
                     },
                 },
                 {
@@ -115,7 +115,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -132,7 +132,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'GET_GENERIC_LOOKUP',
+                        lookup: 'GET_GENERIC_LOOKUP',
                     },
                 },
                 {
@@ -149,7 +149,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -166,7 +166,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'GET_REPLACE_BY_LIST',
+                        lookup: 'REPLACED_BY',
                     },
                 },
                 {
@@ -183,7 +183,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -204,7 +204,7 @@ export const dynamicFormSchema={
                         sizeMatch:'2MB',
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
             ],
@@ -228,7 +228,7 @@ export const dynamicFormSchema={
                       regex: null,
                     },
                     action: {
-                      pre: undefined,
+                      lookup: undefined,
                     },
                 },
                 {
@@ -245,7 +245,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -262,7 +262,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'FG_Yes_No',
+                        lookup: 'FG_Yes_No',
                     },
                 },
                 {
@@ -279,7 +279,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'FG_Yes_No',
+                        lookup: 'FG_Yes_No',
                     },
                 },
                 {
@@ -296,7 +296,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'FG_Yes_No',
+                        lookup: 'FG_Yes_No',
                     },
                 },
                 {
@@ -313,7 +313,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'GET_REPLACE_BY_LIST',
+                        lookup: 'REPLACED_BY',
                     },
                 },
                 {
@@ -330,7 +330,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -351,7 +351,7 @@ export const dynamicFormSchema={
                         sizeMatch:'2MB',
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
             ],
@@ -375,7 +375,7 @@ export const dynamicFormSchema={
                       regex: null,
                     },
                     action: {
-                      pre: undefined,
+                      lookup: undefined,
                     },
                 },
                 {
@@ -392,7 +392,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'AE_NATIONALITY',
+                        lookup: 'AE_NATIONALITY',
                     },
                 },
                 {
@@ -409,7 +409,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'FG_Travel_Participant_Type',
+                        lookup: 'FG_Travel_Participant_Type',
                     },
                 },
                 {
@@ -426,7 +426,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -443,7 +443,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -460,7 +460,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'FG_Travel_Type',
+                        lookup: 'FG_Travel_Type',
                     },
                 },
                 {
@@ -477,7 +477,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -494,7 +494,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -511,7 +511,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -528,7 +528,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -545,7 +545,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'FG_Yes_No',
+                        lookup: 'FG_Yes_No',
                     },
                 },
                 {
@@ -562,7 +562,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'GET_REPLACE_BY_LIST',
+                        lookup: 'REPLACED_BY',
                     },
                 },
                 {
@@ -579,7 +579,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -600,7 +600,7 @@ export const dynamicFormSchema={
                         sizeMatch:'2MB',
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
             ],
@@ -624,7 +624,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -641,7 +641,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'GET_GENERIC_LOOKUP',
+                        lookup: 'XXFAHR_EXIT_REASON',
                     },
                 },
                 {
@@ -658,7 +658,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'REPLACED_BY',
+                        lookup: 'REPLACED_BY',
                     },
                 },
                 {
@@ -675,7 +675,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -696,7 +696,7 @@ export const dynamicFormSchema={
                         sizeMatch:'2MB',
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
             ],
@@ -720,7 +720,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -737,7 +737,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'GET_GENERIC_LOOKUP',
+                        lookup: 'XXFAHR_EXIT_REASON',
                     },
                 },
                 {
@@ -754,7 +754,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'REPLACED_BY',
+                        lookup: 'REPLACED_BY',
                     },
                 },
                 {
@@ -771,7 +771,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -792,7 +792,7 @@ export const dynamicFormSchema={
                         sizeMatch:'2MB',
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
             ],
@@ -816,7 +816,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -833,7 +833,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'FND_TERRITORIES',
+                        lookup: 'FND_TERRITORIES',
                     },
                 },
                 {
@@ -850,7 +850,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: 'REPLACED_BY',
+                        lookup: 'REPLACED_BY',
                     },
                 },
                 {
@@ -867,7 +867,7 @@ export const dynamicFormSchema={
                         regex: null,
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
                     },
                 },
                 {
@@ -888,7 +888,713 @@ export const dynamicFormSchema={
                         sizeMatch:'2MB',
                     },
                     action: {
-                        pre: undefined,
+                        lookup: undefined,
+                    },
+                },
+            ],
+        },
+        {
+            id: '8',
+            code: 'EXCEPTIONAL FREE',
+            icon: '',
+            form_elements: [
+                {
+                    id: '1',
+                    name_en: 'Select Date',
+                    name_ar: '',
+                    inputType: {
+                        type: 'range',
+                    },
+                    api_param: '[I_FROM_DATE,I_TO_DATE]',
+                    seq: 1,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '2',
+                    name_en: 'Reason',
+                    name_ar: '',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'I_EXIT_PERMIT_REASON',
+                    seq: 2,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'XXFAHR_EXIT_REASON',
+                    },
+                },
+                {
+                    id: '3',
+                    name_en: 'Replaced By',
+                    name_ar: 'الموظف البديل',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'I_REPLACEMENT_PER_ID',
+                    seq: 3,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'REPLACED_BY',
+                    },
+                },
+                {
+                    id: '4',
+                    name_en: 'Comments',
+                    name_ar: '',
+                    inputType: {
+                        type: 'textarea',
+                    },
+                    api_param: 'I_COMMENTS',
+                    seq: 4,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '5',
+                    name_en: 'Attachment',
+                    name_ar: '',
+                    inputType: {
+                        type: 'fileselect',
+                        size: 'filesize',
+                        file: 'blob'
+                    },
+                    api_param:
+                    '[{I_FILENAME_1,I_FILE_BLOB_1,I_FILE_TYPE_1,I_FILENAME_2,I_FILE_BLOB_2,I_FILE_TYPE_2,I_FILENAME_3,I_FILE_BLOB_3,I_FILE_TYPE_3}]',
+                    seq: 5,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                        sizeMatch:'2MB',
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+            ],
+        },
+        {
+            id: '9',
+            code: 'EXCEPTIONAL SICK INSIDE',
+            icon: '',
+            form_elements: [
+                {
+                    id: '1',
+                    name_en: 'Select Date',
+                    name_ar: '',
+                    inputType: {
+                        type: 'range',
+                    },
+                    api_param: '[I_FROM_DATE,I_TO_DATE]',
+                    seq: 1,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '2',
+                    name_en: 'Reason',
+                    name_ar: '',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'I_EXIT_PERMIT_REASON',
+                    seq: 2,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'XXFAHR_EXIT_REASON',
+                    },
+                },
+                {
+                    id: '3',
+                    name_en: 'Relationship',
+                    name_ar: 'صلة القرابة',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'ABS_INFORMATION1',
+                    seq: 3,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'FG_CONTACT_REL_DET',
+                    },
+                },
+                {
+                    id: '4',
+                    name_en: 'Sick Leave Reason',
+                    name_ar: 'سبب الاجازة المرضية – نوع المرض',
+                    inputType: {
+                        type: 'input',
+                    },
+                    api_param: 'I_SICK_LEAVE_REASON',
+                    seq: 4,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '5',
+                    name_en: 'Medical Report Issuing Authority',
+                    name_ar: 'الجهة المانحة لشهادة الاجازة المرضية',
+                    inputType: {
+                        type: 'input',
+                    },
+                    api_param: 'I_ISSUING_AUTHORITY',
+                    seq: 5,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '6',
+                    name_en: 'Replaced By',
+                    name_ar: 'الموظف البديل',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'I_REPLACEMENT_PER_ID',
+                    seq: 6,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'REPLACED_BY',
+                    },
+                },
+                {
+                    id: '7',
+                    name_en: 'Comments',
+                    name_ar: '',
+                    inputType: {
+                        type: 'textarea',
+                    },
+                    api_param: 'I_COMMENTS',
+                    seq: 7,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '8',
+                    name_en: 'Attachment',
+                    name_ar: '',
+                    inputType: {
+                        type: 'fileselect',
+                        size: 'filesize',
+                        file: 'blob'
+                    },
+                    api_param:
+                    '[{I_FILENAME_1,I_FILE_BLOB_1,I_FILE_TYPE_1,I_FILENAME_2,I_FILE_BLOB_2,I_FILE_TYPE_2,I_FILENAME_3,I_FILE_BLOB_3,I_FILE_TYPE_3}]',
+                    seq: 8,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                        sizeMatch:'2MB',
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+            ],
+        },
+        {
+            id: '10',
+            code: 'EXCEPTIONAL SICK OUTSIDE',
+            icon: '',
+            form_elements: [
+                {
+                    id: '1',
+                    name_en: 'Select Date',
+                    name_ar: '',
+                    inputType: {
+                        type: 'range',
+                    },
+                    api_param: '[I_FROM_DATE,I_TO_DATE]',
+                    seq: 1,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '2',
+                    name_en: 'Reason',
+                    name_ar: '',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'I_EXIT_PERMIT_REASON',
+                    seq: 2,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'XXFAHR_EXIT_REASON',
+                    },
+                },
+                {
+                    id: '3',
+                    name_en: 'Relationship',
+                    name_ar: 'صلة القرابة',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'ABS_INFORMATION1',
+                    seq: 3,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'FG_CONTACT_REL_DET',
+                    },
+                },
+                {
+                    id: '4',
+                    name_en: 'Sick Leave Reason',
+                    name_ar: 'سبب الاجازة المرضية – نوع المرض',
+                    inputType: {
+                        type: 'input',
+                    },
+                    api_param: 'I_SICK_LEAVE_REASON',
+                    seq: 4,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '5',
+                    name_en: 'Medical Report Issuing Authority',
+                    name_ar: 'الجهة المانحة لشهادة الاجازة المرضية',
+                    inputType: {
+                        type: 'input',
+                    },
+                    api_param: 'I_ISSUING_AUTHORITY',
+                    seq: 5,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '6',
+                    name_en: 'Replaced By',
+                    name_ar: 'الموظف البديل',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'I_REPLACEMENT_PER_ID',
+                    seq: 6,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'REPLACED_BY',
+                    },
+                },
+                {
+                    id: '7',
+                    name_en: 'Comments',
+                    name_ar: '',
+                    inputType: {
+                        type: 'textarea',
+                    },
+                    api_param: 'I_COMMENTS',
+                    seq: 7,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '8',
+                    name_en: 'Attachment',
+                    name_ar: '',
+                    inputType: {
+                        type: 'fileselect',
+                        size: 'filesize',
+                        file: 'blob'
+                    },
+                    api_param:
+                    '[{I_FILENAME_1,I_FILE_BLOB_1,I_FILE_TYPE_1,I_FILENAME_2,I_FILE_BLOB_2,I_FILE_TYPE_2,I_FILENAME_3,I_FILE_BLOB_3,I_FILE_TYPE_3}]',
+                    seq: 8,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                        sizeMatch:'2MB',
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+            ],
+        },
+        {
+            id: '11',
+            code: 'HAJJ',
+            icon: '',
+            form_elements: [
+                {
+                    id: '1',
+                    name_en: 'Select Date',
+                    name_ar: '',
+                    inputType: {
+                        type: 'range',
+                    },
+                    api_param: '[I_FROM_DATE,I_TO_DATE]',
+                    seq: 1,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '2',
+                    name_en: 'Replaced By',
+                    name_ar: 'الموظف البديل',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'I_REPLACEMENT_PER_ID',
+                    seq: 2,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'REPLACED_BY',
+                    },
+                },
+                {
+                    id: '3',
+                    name_en: 'Comments',
+                    name_ar: '',
+                    inputType: {
+                        type: 'textarea',
+                    },
+                    api_param: 'I_COMMENTS',
+                    seq: 3,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '4',
+                    name_en: 'Attachment',
+                    name_ar: '',
+                    inputType: {
+                        type: 'fileselect',
+                        size: 'filesize',
+                        file: 'blob'
+                    },
+                    api_param:
+                    '[{I_FILENAME_1,I_FILE_BLOB_1,I_FILE_TYPE_1,I_FILENAME_2,I_FILE_BLOB_2,I_FILE_TYPE_2,I_FILENAME_3,I_FILE_BLOB_3,I_FILE_TYPE_3}]',
+                    seq: 4,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                        sizeMatch:'2MB',
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+            ],
+        },
+        {
+            id: '12',
+            code: 'IDDAT',
+            icon: '',
+            form_elements: [
+                {
+                    id: '1',
+                    name_en: 'Select Date',
+                    name_ar: '',
+                    inputType: {
+                        type: 'range',
+                    },
+                    api_param: '[I_FROM_DATE,I_TO_DATE]',
+                    seq: 1,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '2',
+                    name_en: 'Replaced By',
+                    name_ar: 'الموظف البديل',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'I_REPLACEMENT_PER_ID',
+                    seq: 2,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'REPLACED_BY',
+                    },
+                },
+                {
+                    id: '3',
+                    name_en: 'Comments',
+                    name_ar: '',
+                    inputType: {
+                        type: 'textarea',
+                    },
+                    api_param: 'I_COMMENTS',
+                    seq: 3,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '4',
+                    name_en: 'Attachment',
+                    name_ar: '',
+                    inputType: {
+                        type: 'fileselect',
+                        size: 'filesize',
+                        file: 'blob'
+                    },
+                    api_param:
+                    '[{I_FILENAME_1,I_FILE_BLOB_1,I_FILE_TYPE_1,I_FILENAME_2,I_FILE_BLOB_2,I_FILE_TYPE_2,I_FILENAME_3,I_FILE_BLOB_3,I_FILE_TYPE_3}]',
+                    seq: 4,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                        sizeMatch:'2MB',
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+            ],
+        },
+        {
+            id: '13',
+            code: 'UAE NATIONAL SERVICE LEAVE',
+            icon: '',
+            form_elements: [
+                {
+                    id: '1',
+                    name_en: 'Select Date',
+                    name_ar: '',
+                    inputType: {
+                        type: 'range',
+                    },
+                    api_param: '[I_FROM_DATE,I_TO_DATE]',
+                    seq: 1,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '2',
+                    name_en: 'Replaced By',
+                    name_ar: 'الموظف البديل',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'I_REPLACEMENT_PER_ID',
+                    seq: 2,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'REPLACED_BY',
+                    },
+                },
+                {
+                    id: '3',
+                    name_en: 'Comments',
+                    name_ar: '',
+                    inputType: {
+                        type: 'textarea',
+                    },
+                    api_param: 'I_COMMENTS',
+                    seq: 3,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '4',
+                    name_en: 'Attachment',
+                    name_ar: '',
+                    inputType: {
+                        type: 'fileselect',
+                        size: 'filesize',
+                        file: 'blob'
+                    },
+                    api_param:
+                    '[{I_FILENAME_1,I_FILE_BLOB_1,I_FILE_TYPE_1,I_FILENAME_2,I_FILE_BLOB_2,I_FILE_TYPE_2,I_FILENAME_3,I_FILE_BLOB_3,I_FILE_TYPE_3}]',
+                    seq: 4,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                        sizeMatch:'2MB',
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+            ],
+        },
+        {
+            id: '14',
+            code: 'UNPAID',
+            icon: '',
+            form_elements: [
+                {
+                    id: '1',
+                    name_en: 'Select Date',
+                    name_ar: '',
+                    inputType: {
+                        type: 'range',
+                    },
+                    api_param: '[I_FROM_DATE,I_TO_DATE]',
+                    seq: 1,
+                    validation: {
+                        isRequired: true,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '2',
+                    name_en: 'Replaced By',
+                    name_ar: 'الموظف البديل',
+                    inputType: {
+                        type: 'dropdown',
+                    },
+                    api_param: 'I_REPLACEMENT_PER_ID',
+                    seq: 2,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: 'REPLACED_BY',
+                    },
+                },
+                {
+                    id: '3',
+                    name_en: 'Comments',
+                    name_ar: '',
+                    inputType: {
+                        type: 'textarea',
+                    },
+                    api_param: 'I_COMMENTS',
+                    seq: 3,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                    },
+                    action: {
+                        lookup: undefined,
+                    },
+                },
+                {
+                    id: '4',
+                    name_en: 'Attachment',
+                    name_ar: '',
+                    inputType: {
+                        type: 'fileselect',
+                        size: 'filesize',
+                        file: 'blob'
+                    },
+                    api_param:
+                    '[{I_FILENAME_1,I_FILE_BLOB_1,I_FILE_TYPE_1,I_FILENAME_2,I_FILE_BLOB_2,I_FILE_TYPE_2,I_FILENAME_3,I_FILE_BLOB_3,I_FILE_TYPE_3}]',
+                    seq: 4,
+                    validation: {
+                        isRequired: false,
+                        regex: null,
+                        sizeMatch:'2MB',
+                    },
+                    action: {
+                        lookup: undefined,
                     },
                 },
             ],
