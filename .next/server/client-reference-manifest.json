@@ -290,6 +290,32 @@
         "async": false
       }
     },
+    "(app-client)/./src/app/leave/components/LeaveType.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/leave/components/LeaveType.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/app/leave/components/LeaveType.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/app/leave/components/LeaveType.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./src/components/ui/tabs.tsx": {
       "*": {
         "id": "(sc_client)/./src/components/ui/tabs.tsx",
@@ -1127,6 +1153,30 @@
     "/Users/tamilarasann/fahr-ui-component/node_modules/next/dist/esm/shared/lib/head.js#defaultHead": {
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "defaultHead",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/tamilarasann/fahr-ui-component/src/app/leave/components/LeaveType.tsx": {
+      "id": "(app-client)/./src/app/leave/components/LeaveType.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/tamilarasann/fahr-ui-component/src/app/leave/components/LeaveType.tsx#": {
+      "id": "(app-client)/./src/app/leave/components/LeaveType.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/tamilarasann/fahr-ui-component/src/app/leave/components/LeaveType.tsx#default": {
+      "id": "(app-client)/./src/app/leave/components/LeaveType.tsx",
+      "name": "default",
       "chunks": [
         "app/page:static/chunks/app/page.js"
       ],

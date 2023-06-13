@@ -1,11 +1,43 @@
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import React from 'react'
+'use client'
+import { Card, CardContent } from '@/components/ui/card'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { DatePickerWithRange } from './Date/DatePicker'
-import Attachment from './Attachment/Attachment'
+import { Attachment } from './Attachment/Attachment'
 
 export default function LeaveType() {
+
+  let key = '["I_FILENAME_1","I_FILE_BLOB_1","I_FILE_TYPE_1","I_FILENAME_2","I_FILE_BLOB_2","I_FILE_TYPE_2","I_FILENAME_3","I_FILE_BLOB_3","I_FILE_TYPE_3"]'
+
+  const [attachment, setAttachment] = useState(()=>{
+    let object:any={}
+    const parsed = JSON.parse(key)
+    parsed.forEach((key:string)=>{
+    object[key]=''
+  })
+  return object
+  });
+
+const handleFiles=(e:any,key:string)=>{
+  console.log(key);
+  
+  
+    let files = [...e.target.files];
+    
+    if (files && files.length > 0) {
+        files.map((data,i)=>{
+            const fileSize = Math.round(data?.size / 1024);
+            console.log(data);
+            
+            if (fileSize < 2048) {
+                setAttachment((currentAttachment:any)=>({...currentAttachment,...{[key[i]]:data.name}
+                }));
+            }
+        })
+    }
+    console.log(attachment);   
+}
+
   return (
     <div>
       <Card className="mx-4 mt-4 p-4">
@@ -157,7 +189,7 @@ export default function LeaveType() {
                 </div>
               </TabsTrigger>
             </TabsList>
-            <TabsContent value="total" className="w-full"><Attachment/></TabsContent>
+            <TabsContent value="total" className="w-full"><Attachment handleChange={handleFiles}/></TabsContent>
             <TabsContent value="annual" className="w-full"></TabsContent>
             <TabsContent value="sick" className="w-full"></TabsContent>
           </Tabs>
