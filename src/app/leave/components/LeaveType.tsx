@@ -4,7 +4,15 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Attachment } from './Attachment/Attachment'
-import { dynamicFormSchema } from '../schema/LeaveSchema'
+
+function convertFileToBase64(file:any){
+  return new Promise((resolve, reject)=>{
+    const reader= new FileReader()
+    reader.readAsDataURL(file)
+    reader.onload = () => resolve(reader.result)
+    reader.onerror = reject
+  })
+}
 
 export default function LeaveType() {
 
@@ -18,7 +26,7 @@ export default function LeaveType() {
           newFiles.push(
             {
               ['I_FILENAME_'+(index+1)]:data.name,
-              ['I_FILE_BLOB_'+(index+1)]:data,
+              ['I_FILE_BLOB_'+(index+1)]:convertFileToBase64(data),
               ['I_FILE_TYPE_'+(index+1)]:data.type
             }
           )
