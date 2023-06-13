@@ -22,7 +22,7 @@ export const Attachment: React.FC<Props> = ({handleChange}) => {
                             id="file-input"
                             type="file"
                             multiple
-                            onChange={(e) => handleChange(e, api_param)} />
+                            onChange={(e) => handleChange(e, 'Attachment')} />
                         <Image
                             src={'/assets/icons/attach.svg'}
                             alt='logo'

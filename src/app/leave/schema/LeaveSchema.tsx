@@ -1,4 +1,7 @@
-export const dynamicFormSchema={
+import { Schema } from "../createLeave";
+
+export function dynamicFormSchema(code:string){
+   const schema: Schema = {
     forms: [
         {
             id: '1',
@@ -2971,4 +2974,6 @@ export const dynamicFormSchema={
             ],
         },
     ],
+}
+return schema.forms.filter((s) => s.code ==code)[0]
 }
