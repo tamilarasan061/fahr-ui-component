@@ -5,12 +5,15 @@ import Image from 'next/image'
 
 type Props={
     handleChange: ( payload:any,key:string ) => void
+    handleDrop: ( payload:any,key:string ) => void
 }
 
-export const Attachment: React.FC<Props> = ({handleChange}) => {
-    let api_param = '["I_FILENAME_1","I_FILE_BLOB_1","I_FILE_TYPE_1","I_FILENAME_2","I_FILE_BLOB_2","I_FILE_TYPE_2","I_FILENAME_3","I_FILE_BLOB_3","I_FILE_TYPE_3"]'
+export const Attachment: React.FC<Props> = ({handleChange,handleDrop}) => {
+    
     return (
-        <div dir='ltr'>
+        <div dir='ltr' 
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={(e) => handleDrop(e,'Attachment')}>
             <p className="text-sm font-medium py-2">Attachment</p>
             <Card className="max-w-[590px] max-h-[100px] w-full border-dashed border-2 border-[#cccccc] bg-[#EDF0F6] pt-3">
                 <CardContent className='flex ms-[10%]'>
@@ -22,7 +25,8 @@ export const Attachment: React.FC<Props> = ({handleChange}) => {
                             id="file-input"
                             type="file"
                             multiple
-                            onChange={(e) => handleChange(e, 'Attachment')} />
+                            onChange={(e) => handleChange(e, 'Attachment')} 
+                            />
                         <Image
                             src={'/assets/icons/attach.svg'}
                             alt='logo'

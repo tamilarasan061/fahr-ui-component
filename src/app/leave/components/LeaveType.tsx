@@ -4,6 +4,10 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Attachment } from './Attachment/Attachment'
+import TimePicker from 'react-time-picker'
+import Time from './Date/Time'
+import DemoApp from './Date/Demo'
+import ClockTime from './Date/ClockTime'
 
 function convertFileToBase64(file:any){
   return new Promise((resolve, reject)=>{
@@ -18,11 +22,22 @@ export default function LeaveType() {
 
   const [payload, setPayload] = useState(()=>[]);
 
+  const handleDrop = (e:any,key:string) =>{
+    e.preventDefault();
+    e.stopPropagation();
+    let files = [...e.dataTransfer.files]; 
+    fileParse(files)
+  }
+
   const handleChange=(e:any,key:string)=>{
       let files = [...e.target.files]; 
+      fileParse(files)
+  }
+  
+  const fileParse=(files:any)=>{
       const newFiles: any = [] 
       if (files && files.length > 0) {
-        files.map((data,index)=>{
+        files.map((data:any,index:any)=>{
           newFiles.push(
             {
               ['I_FILENAME_'+(index+1)]:data.name,
@@ -33,15 +48,17 @@ export default function LeaveType() {
         })
       }
       setPayload(Object.assign({},...newFiles));
-   
   }
-  console.log("FILES",payload);   
+
+  console.log("PAYLOAD",payload);
+  
 
   return (
     <div>
       <Card className="mx-4 mt-4 p-4">
         <CardContent>
-          <Tabs defaultValue="total" className="flex-col relative">
+        <ClockTime/>
+          <Tabs defaultValue="total" className="flex-col relative top-[80px]">
             <TabsList className="grid h-full grid-cols-6">
               <TabsTrigger className="h-full flex-col rounded-t-[10px] items-center justify-center" value="total">
                 <div className='flex cursor-pointer hover:cursor-pointer'>
@@ -188,9 +205,12 @@ export default function LeaveType() {
                 </div>
               </TabsTrigger>
             </TabsList>
-            <TabsContent value="total" className="w-full"><Attachment handleChange={handleChange}/></TabsContent>
-            <TabsContent value="annual" className="w-full"></TabsContent>
-            <TabsContent value="sick" className="w-full"></TabsContent>
+            <TabsContent value="total" className="w-full"><Attachment handleDrop={handleDrop} handleChange={handleChange}/></TabsContent>
+            <TabsContent value="annual" className="w-full">
+              <Time/>
+            </TabsContent>
+            <TabsContent value="sick" className="w-full">
+            </TabsContent>
           </Tabs>
         </CardContent>
       </Card>

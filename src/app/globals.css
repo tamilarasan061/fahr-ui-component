@@ -70,6 +70,18 @@
   }
 }
 
+.fc-daygrid-day-top {
+  display: flex;
+  flex-direction: row !important;
+}
+.fc-toolbar-chunk {
+  display: flex;
+}
+
+.fc-header-toolbar{
+  width: 25%
+}
+
 @layer base {
   * {
     @apply border-border;

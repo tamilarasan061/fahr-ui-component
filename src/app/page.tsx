@@ -3,11 +3,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import Image from 'next/image'
 import React from 'react'
 import LeaveManagement from './leave/page'
+import LetterManagement from './letter/page'
 
 export default function Home() {
   return (
     <div>
       <LeaveManagement/>
+      <LetterManagement/>
     </div>
   )
 }
