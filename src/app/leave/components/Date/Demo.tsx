@@ -33,6 +33,7 @@ export default class DemoApp extends React.Component {
             weekends={this.state.weekendsVisible}
             initialEvents={INITIAL_EVENTS} // alternatively, use the `events` setting to fetch from a feed
             select={this.handleDateSelect}
+            eventBackgroundColor={"#333333"}
             eventContent={renderEventContent} // custom render function
             eventClick={this.handleEventClick}
             eventsSet={this.handleEvents} // called after events are initialized/added/changed/removed

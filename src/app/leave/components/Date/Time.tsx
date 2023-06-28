@@ -70,6 +70,37 @@ export default function Time() {
     })
   }, [])
 
+const show = (event:any) =>{
+  console.log(event);
+  
+  return(
+    <div className="modal fade" id="schedule-edit">
+    <div className="modal-dialog">
+        <div className="modal-content">
+            <div className="modal-header">
+                <h4 className="modal-title">Edit Your Schedule</h4>
+                <button type="button" className="close" data-dismiss="modal">&times;</button>
+            </div>
+          
+            <div className="modal-body">
+                <form>
+                    <div className="form-group">
+                        <label>Schedule Name:</label>
+                        <input type="text" className="form-control"/>
+                    </div>
+                </form>
+            </div>
+         
+            <div className="modal-footer">
+                <button type="button" className="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" className="btn btn-success">Save Your Schedule</button>
+            </div>
+        </div>
+    </div>
+</div>
+  )
+}
+
 console.log(events);
 
   return (
@@ -95,9 +126,35 @@ console.log(events);
         selectMirror={true}
         dayMaxEvents={true}
         events={events}
+        eventClick={
+          function(arg) {
+            $("#myModal").modal("show");
+            $(".modal-body").html("");
+            $(".modal-body").html("<h3>"+arg.dateStr+"</h3>");
+          }
+        }
         initialEvents={events} // alternatively, use the `events` setting to fetch from a feed
         eventContent={renderEventContent} // custom render function
       />
+      <div className="modal" id="myModal">
+            <div className="modal-dialog">
+              <div className="modal-content">
+              
+                <div className="modal-header">
+                  <h4 className="modal-title align-center">Date is Below</h4>
+                  <button type="button" className="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <div className="modal-body text-center">
+                  
+                </div>
+              
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
   );
 }

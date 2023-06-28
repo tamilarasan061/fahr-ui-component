@@ -10,11 +10,7 @@ self.__RSC_CSS_MANIFEST={
       "/Users/tamilarasann/fahr-ui-component/src/app/globals.css",
       "/Users/tamilarasann/fahr-ui-component/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
     ],
-    "/Users/tamilarasann/fahr-ui-component/src/app/leave/page": [
-      "/Users/tamilarasann/fahr-ui-component/src/app/globals.css",
-      "/Users/tamilarasann/fahr-ui-component/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
-    ],
-    "/Users/tamilarasann/fahr-ui-component/src/app/letter/page": [
+    "/Users/tamilarasann/fahr-ui-component/src/app/pms/page": [
       "/Users/tamilarasann/fahr-ui-component/src/app/globals.css",
       "/Users/tamilarasann/fahr-ui-component/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}"
     ]

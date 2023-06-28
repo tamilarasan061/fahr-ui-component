@@ -11,15 +11,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/leave/page": [
+    "/pms/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/leave/page.js"
-    ],
-    "/letter/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/letter/page.js"
+      "static/chunks/app/pms/page.js"
     ]
   }
 }
